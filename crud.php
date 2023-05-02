@@ -5,10 +5,8 @@ $pass   = "";
 $host   = "localhost";
 $db     = "barang";
 
-$con = mysqli_connect($host, $user, $pass, $db);
-if (!$con) {
-    die("Koneksi Gagal");
-}
+$con = mysqli_connect($host, $user, $pass, $db) or die("Koneksi Gagal");
+
 
 $id = "";
 $kode = "";

@@ -30,16 +30,16 @@ $con = mysqli_connect($host, $user, $pass, $db) or die("Koneksi Gagal");
     <div class="container-fluid d-flex justify-content-center mt-5">
         <form>
             <div class="inputan d-flex flex-row bg-white mb-3 border border-dark p-2">
-                <img src="../assets/email.png" alt="" class="ms-2">
+                <img src="../assets/email.png" alt="" class="ms-2 email">
                 <input type="password" class="ms-3 border border-0" id="email" name="email" placeholder="Masukkan email anda...">
             </div>
             <div class="inputan d-flex flex-row bg-white mb-3 border border-dark p-2">
-                <img src="../assets/lock.png" alt="" class="ms-3 me-2">
+                <img src="../assets/lock.png" alt="" class="ms-3 lock">
                 <input type="password" class="ms-3 border border-0" id="email" name="email" placeholder="Masukkan password anda...">
-                <img src="../assets/eye.png" alt="" class="">
+                <img src="../assets/eye.png" alt="" class="eye">
             </div>
-            <div class="container rounded-5 tombol">
-                <button type="submit" class="text-white mt-5">LOGIN</button>
+            <div class="container d-flex justify-content-center rounded-5 tombol">
+                <button type="submit" class="text-white mt-5 fs-4">LOGIN</button>
             </div>
         </form>
     </div>

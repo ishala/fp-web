@@ -23,14 +23,19 @@ form {
     width: 40%;
 }
 
-img{
+.email {
     height: 30px;
     padding: 3px;
 }
 
+.lock {
+    height: 30px;
+    margin-right: 5px;
+}
+
 .inputan input {
     width: 80%;
-}
+} 
 
 .inputan {
     height: 50px;
@@ -38,7 +43,7 @@ img{
 }
 
 button {
-    width: 100%;
+    width: 80%;
     height: 50px;
     border-radius: 50px;
     background-color: var(--button-color);

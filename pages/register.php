@@ -48,7 +48,7 @@ $con = mysqli_connect($host, $user, $pass, $db) or die("Koneksi Gagal");
                 <div class="col-12">
                     <p>Email*</p>
                     <div class="inputan d-flex flex-row bg-white mb-3 border border-2 border-dark p-2">
-                        <input type="password" class="ms-3 border border-0" id="email" name="email" placeholder="Masukkan email anda...">
+                        <input type="text" class="ms-3 border border-0" id="email" name="email" placeholder="Masukkan email anda...">
                     </div>
                 </div>
             </div>

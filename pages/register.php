@@ -1,11 +1,5 @@
 <?php
-
-$user   = "root";
-$pass   = "";
-$host   = "localhost";
-$db     = "penjual";
-
-$con = mysqli_connect($host, $user, $pass, $db) or die("Koneksi Gagal");
+require_once('../api_config/func_register.php');
 ?>
 
 
@@ -21,26 +15,27 @@ $con = mysqli_connect($host, $user, $pass, $db) or die("Koneksi Gagal");
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/register.css">
+    <link rel="stylesheet" href="http://localhost:8080/final-projek/styles/register.css">
     <title>E-Canteen: Register</title>
 </head>
 
 <body>
     <h1 class="fw-bold fs-2 mt-3 ms-3">E-Canteen</h1>
     <div class="isian container d-flex justify-content-center bg-light">
-        <form>
+        <!--FORM-->
+        <form method="POST">
             <h2 class="text-center fw-bold mt-4 mb-5">Sign Up</h2>
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <p>Nama*</p>
                     <div class="inputan d-flex flex-row bg-white mb-3 border border-2 border-dark p-2">
-                        <input type="text" class="ms-3 border border-0" id="email" name="email" placeholder="Masukkan nama anda...">
+                        <input type="text" class="ms-3 border border-0" id="name" name="name" placeholder="Masukkan nama anda...">
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
                     <p>Username*</p>
                     <div class="inputan d-flex flex-row bg-white mb-3 border border-2 border-dark p-2">
-                        <input type="text" class="ms-3 border border-0" id="email" name="email" placeholder="Masukkan username anda...">
+                        <input type="text" class="ms-3 border border-0" id="username" name="username" placeholder="Masukkan username anda...">
                     </div>
                 </div>
             </div>
@@ -56,7 +51,7 @@ $con = mysqli_connect($host, $user, $pass, $db) or die("Koneksi Gagal");
                 <div class="col-12">
                     <p>Password*</p>
                     <div class="inputan d-flex flex-row bg-white mb-3 border border-2 border-dark p-2">
-                        <input type="password" class="ms-3 border border-0" id="email" name="email" placeholder="Masukkan password anda...">
+                        <input type="password" class="ms-3 border border-0" id="password" name="password" placeholder="Masukkan password anda...">
                         <img src="../assets/eye.png" alt="" class="eye ms-4">
                     </div>
                 </div>
@@ -65,13 +60,13 @@ $con = mysqli_connect($host, $user, $pass, $db) or die("Koneksi Gagal");
                 <div class="col-12">
                     <p>Confirm Password*</p>
                     <div class="inputan d-flex flex-row bg-white mb-3 border border-2 border-dark p-2">
-                        <input type="password" class="ms-3 border border-0" id="email" name="email" placeholder="Konfirmasi password anda...">
+                        <input type="password" class="ms-3 border border-0" id="chkpass" name="chkpass" placeholder="Konfirmasi password anda...">
                         <img src="../assets/eye.png" alt="" class="eye ms-4">
                     </div>
                 </div>
             </div>
             <div class="container d-flex justify-content-center rounded-5 tombol mb-4">
-                <button type="submit" class="text-white mt-4 fs-4">REGISTER</button>
+                <button type="submit" class="text-white mt-4 fs-4" name="register" value="register">REGISTER</button>
             </div>
         </form>
     </div>

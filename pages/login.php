@@ -1,14 +1,7 @@
-<?php
-
-$user   = "root";
-$pass   = "";
-$host   = "localhost";
-$db     = "penjual";
-
-$con = mysqli_connect($host, $user, $pass, $db) or die("Koneksi Gagal");
+<?php 
+require_once('../api_config/func_login.php'); 
+require_once('../api_config/api_base.php');
 ?>
-
-
 
 
 <!doctype html>
@@ -21,29 +14,29 @@ $con = mysqli_connect($host, $user, $pass, $db) or die("Koneksi Gagal");
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="http://localhost:8080/final-projek/styles/login.css">
     <title>E-Canteen: Login</title>
 </head>
 
 <body>
     <h1 class="text-center fw-bold">E-Canteen</h1>
     <div class="container-fluid d-flex justify-content-center mt-5">
-        <form>
+        <form method="POST">
             <div class="inputan d-flex flex-row bg-white mb-3 border border-dark p-2">
                 <img src="../assets/email.png" alt="" class="ms-2 email">
-                <input type="password" class="ms-3 border border-0" id="email" name="email" placeholder="Masukkan email anda...">
+                <input type="text" class="ms-3 border border-0" id="email" name="email" placeholder="Masukkan email anda...">
             </div>
             <div class="inputan d-flex flex-row bg-white mb-3 border border-dark p-2">
                 <img src="../assets/lock.png" alt="" class="ms-3 lock">
-                <input type="password" class="ms-3 border border-0" id="email" name="email" placeholder="Masukkan password anda...">
+                <input type="password" class="ms-3 border border-0" id="password" name="password" placeholder="Masukkan password anda...">
                 <img src="../assets/eye.png" alt="" class="eye">
             </div>
             <div class="container d-flex justify-content-center rounded-5 tombol">
-                <button type="submit" class="text-white mt-5 fs-4">LOGIN</button>
+                <button type="submit" class="text-white mt-5 fs-4" name="submit" value="submit">LOGIN</button>
             </div>
         </form>
     </div>
-    <p class="text-center mt-2 fs-5">Don't have an account? <span class="text-decoration-underline fw-bold">Register</span></p>
+    <p class="text-center mt-2 fs-5">Don't have an account? <a href="<?php echo $routes['register'] ?>"><span class="text-decoration-underline fw-bold text-black">Register</span></a></p>
 
 
 

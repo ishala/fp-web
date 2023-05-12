@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap');
+@import url(color.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+.pesanan{
+    width: 150px;
+    box-shadow: 5px 5px 5px 0.25px grey;
+    border-radius: 25px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.pesanan p{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.iklan{
+    background-color: #C7E8CA;
+    width: 92%;
+    border-radius: 25px;
+    padding: 30px;
+    margin-left: 60px;
+}
+
+.iklan button {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--button-color);
+    border-style: none;
+    padding-top: 5px;
+}
+
+.iklan button p{
+    font-size: 14px;
+    margin-top: 3.5px;
+}
+
+.iklan div img{
+    height: 350px;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+.filter{
+    width: 40%;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.filter button{
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--button-color);
+    border-style: none;
+    padding-top: 5px;
+}
+
+.filter button p {
+    margin-top: 3px;
+}
+
+.wrapper{
+    max-height: 350px;
+    margin-top: 50px;
+    overflow-y: auto;
+    margin-top: 30px;
+}
+
+.card{
+    border-radius: 25px;
+    min-width: 300px;
+    margin-right: 30px;
+}
+
+.card .card-text{
+    font-size: 15px;
+}
+
+.btn {
+    box-shadow: 3px 3px 3px 0.25px grey;
+    border-radius: 25px;
+}

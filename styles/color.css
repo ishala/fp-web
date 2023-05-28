@@ -1,4 +1,6 @@
 :root{
     --button-color: #DF2E38;
-    --default-background: white;
+    --primary-background: white;
+    --navbar-background : #EBFFEC;
+    --secondary-background : #C7E8CA;
 }
